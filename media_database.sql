@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 23, 2026 at 06:50 PM
+-- Generation Time: Sep 23, 2026 at 07:20 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -24,17 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `genre`
---
-
-CREATE TABLE `genre` (
-  `media_id` int(11) NOT NULL,
-  `genre` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `media`
 --
 
@@ -42,44 +31,20 @@ CREATE TABLE `media` (
   `name` text NOT NULL,
   `rating` int(11) NOT NULL,
   `format` varchar(20) NOT NULL,
-  `count` int(11) NOT NULL,
+  `count` int(11) DEFAULT NULL,
   `media_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `member`
+-- Dumping data for table `media`
 --
 
-CREATE TABLE `member` (
-  `username` varchar(20) NOT NULL,
-  `email` text NOT NULL,
-  `password` varchar(20) NOT NULL,
-  `member_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `wishlist`
---
-
-CREATE TABLE `wishlist` (
-  `member_id` int(11) NOT NULL,
-  `media_id` int(11) NOT NULL,
-  `status` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+INSERT INTO `media` (`name`, `rating`, `format`, `count`, `media_id`) VALUES
+('Chainsaw Man – The Movie: Reze Arc', 10, 'Movie', 0, 1);
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `genre`
---
-ALTER TABLE `genre`
-  ADD PRIMARY KEY (`media_id`,`genre`);
 
 --
 -- Indexes for table `media`
@@ -88,16 +53,14 @@ ALTER TABLE `media`
   ADD PRIMARY KEY (`media_id`);
 
 --
--- Indexes for table `member`
+-- AUTO_INCREMENT for dumped tables
 --
-ALTER TABLE `member`
-  ADD PRIMARY KEY (`member_id`);
 
 --
--- Indexes for table `wishlist`
+-- AUTO_INCREMENT for table `media`
 --
-ALTER TABLE `wishlist`
-  ADD PRIMARY KEY (`member_id`,`media_id`);
+ALTER TABLE `media`
+  MODIFY `media_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
