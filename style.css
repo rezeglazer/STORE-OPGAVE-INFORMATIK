@@ -1,0 +1,32 @@
+/*ok ganger er universel vælger ændre her for eúdsene*/
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    
+    background-color: black;
+    color: white;
+
+}
+
+nav {
+    display: inside;
+   
+    gap: 20px;
+}
+/*den selecter alle links*/
+
+.tab {
+    padding: 10px 20px;
+    border-radius: 5px;
+    list-style: none;
+    display: block;
+    background-color: rgb(247, 245, 245);
+
+}
+nav li {
+    list-style: none;
+}
