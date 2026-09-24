@@ -8,25 +8,44 @@ box-sizing: border-box;
 body {
     
     background-color: black;
-    color: white;
+    color: aliceblue;
 
 }
 
 nav {
-    display: inside;
-   
-    gap: 20px;
-}
-/*den selecter alle links*/
+    /*den sorter vandret*/
 
-.tab {
-    padding: 10px 20px;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    height: 60vh;
+    
+}
+/*den selecter alle links under tab class*/
+
+.cd{
+    display: flex;
+  justify-content: center;}
+
+.tab li {
+    padding: 10px 10px;
     border-radius: 5px;
-    list-style: none;
-    display: block;
-    background-color: rgb(247, 245, 245);
+    border-right-color: gray;
+    border: 2px solid white;
+    background-color: #1a1a1a;
 
 }
-nav li {
-    list-style: none;
+.tab a {color: aliceblue;}
+
+.htext{
+    gap: 20px;
+        text-align: center;
+
+}
+.htext{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
 }
