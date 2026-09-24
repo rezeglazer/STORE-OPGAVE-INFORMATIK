@@ -7,26 +7,39 @@ box-sizing: border-box;
 
 body {
     
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 
 }
 
 nav {
-    display: inside;
-   
-    gap: 20px;
+    /*den sorter vandret*/
+
+
+    display: flex;
+    gap: 50px;
+    list-style: none;
 }
-/*den selecter alle links*/
+/*den selecter alle links under tab class*/
 
 .tab {
-    padding: 10px 20px;
+    padding: 20px;
     border-radius: 5px;
-    list-style: none;
-    display: block;
-    background-color: rgb(247, 245, 245);
+   
+    border: 2px solid black;
+    background-color: gray;
+}
+.tab li {
+    padding: 20px;
+    border-radius: 5px;
+   
+    border: 2px solid black;
 
 }
-nav li {
-    list-style: none;
+.tab a {color: black;}
+.htext h1{
+    text-align: center;
+}
+.htext p{
+        text-align: center;
 }
