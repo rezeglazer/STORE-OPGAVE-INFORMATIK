@@ -6,22 +6,18 @@ box-sizing: border-box;
 }
 
 body {
-    
     background-color: black;
     color: aliceblue;
-
 }
 
 nav {
     /*den sorter vandret*/
-
     justify-content: center;
     display: flex;
     gap: 10px;
     list-style: none;
     align-items: center;
     height: 60vh;
-    
 }
 /*den selecter alle links under tab class*/
 
@@ -41,9 +37,9 @@ nav {
 
 .htext{
     gap: 20px;
-        text-align: center;
-
+    text-align: center;
 }
+
 .htext{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
