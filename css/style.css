@@ -34,7 +34,13 @@ nav {
     background-color: #f8f399;
 
 }
-.tab linkText {color: #181b03;}
+
+.tab a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link-linkText {  color: #181b03; }
 
 .htext{
     gap: 20px;
