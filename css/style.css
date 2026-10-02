@@ -1,6 +1,7 @@
 /*ok ganger er universel vælger ændre her for eúdsene*/
 
-*{margin: 0;
+*{
+margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
@@ -17,13 +18,21 @@ nav {
     gap: 10px;
     list-style: none;
     align-items: center;
-    height: 60vh;
+    height: 20vh;
 }
+
 /*den selecter alle links under tab class*/
 
 .cd{
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
     display: flex;
-  justify-content: center;}
+    gap: 10px;
+    list-style: none;
+}
 
 .tab li {
     padding: 10px 10px;
@@ -32,7 +41,6 @@ nav {
     border: 2px solid white; */
     color: #181b03;
     background-color: #f8f399;
-
 }
 
 .tab a {
@@ -40,7 +48,7 @@ nav {
     text-decoration: none;
 }
 
-.link-linkText {  color: #181b03; }
+.link-linkText {  color: #181b03; font-weight: bold;}
 
 .htext{
     gap: 20px;
@@ -50,5 +58,5 @@ nav {
 .htext{
     font-family: monospace, Helvetica, sans-serif;
     font-size: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
