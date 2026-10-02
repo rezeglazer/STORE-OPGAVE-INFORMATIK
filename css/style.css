@@ -1,9 +1,21 @@
 /*ok ganger er universel vælger ændre her for eúdsene*/
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+header {
+    min-height: 0rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 body {
@@ -13,38 +25,31 @@ body {
 
 nav {
     /*den sorter vandret*/
+    display: flex;  
     justify-content: center;
-    display: flex;
-    gap: 10px;
-    list-style: none;
     align-items: center;
-    height: 20vh;
 }
-
-.search_box {
-    position: relative;
-    align-items: center;
-
-}
-
-.forslag {
-    position: absolute;
-    display: none;
-
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    color: black;
-}
-
-.forslag div {
-    padding: 10px;
-}
-
 
 /*den selecter alle links under tab class*/
 
+/*
+Source - https://stackoverflow.com/a/65949603
+Posted by tacoshy
+Retrieved 2026-10-02, License - CC BY-SA 4.0
+*/
+
+.textBox {
+  display: flex;
+  justify-content: center;
+  background-color: #c5b830;
+  color: #181b03;
+  align-items: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 3em;
+  width: 25rem;
+  height: 5rem;
+}
 
 .cd{
   display: flex;
@@ -58,7 +63,7 @@ nav {
 }
 
 .tab li {
-    padding: 10px 10px;
+    padding: 5px 20px;
   /*border-radius: 5px;
     border-right-color: gray ;
     border: 2px solid white; */
