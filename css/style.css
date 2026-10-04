@@ -12,9 +12,7 @@ header {
 }
 
 .search{
-
-
-position: absolute;
+    position: absolute;
     top: 0.2rem;
     left: 0.2rem;
     display: flex;
@@ -22,33 +20,38 @@ position: absolute;
 
     border: 0.15rem solid #c5b830;
     height: 1.6rem;
+}
 
-    }
+.moviesTable{
+    background-color: #c5b830;
+    border: 0.15rem solid #f8f399;
+    height: 1.6rem;
 
+    color: #181b03;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 
 .placeholder{
-
-
-width: 250px;
+    width: 30rem;
     height: 300px;
     border: 2px solid #c5b830;
     margin: 10px auto;
-
-
-
 }
+
 .most-watched {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
+
 .most-watched h2 {
     display: inline-block;
     background-color: #c5b830;
-    color: #181b03;
-    font-size: 14px;
-    padding: 5px;
+    color: #181b03;;
+    font-size: 1rem;
+    padding: 1rem;
 }
-
 
 .search button {
     width: 1.8rem;
@@ -60,6 +63,7 @@ width: 250px;
     border: none;
     cursor: pointer;
 }
+
 main {
     display: flex;
     justify-content: center;
@@ -79,15 +83,7 @@ nav {
     align-items: center;
 }
 
-
-/*
-Source - https://stackoverflow.com/a/65949603
-Posted by tacoshy
-Retrieved 2026-10-02, License - CC BY-SA 4.0
-*/
-
-.Headline {
-    
+.headline {
   display: flex;
   justify-content: center;
   background-color: #c5b830;
@@ -121,5 +117,9 @@ Retrieved 2026-10-02, License - CC BY-SA 4.0
 }
 /*den ændrer link font */
 
-.li-linkText {  color: #181b03; font-weight: bold;}
+.li-linkText {  
+    color: #181b03; 
+    font-family: monospace;    
+    font-weight: bold;
+}
 
